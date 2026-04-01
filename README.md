@@ -16,6 +16,16 @@ For Part 1.2, to check if the default HR and Manager accounts have been initiali
     '1','$2a$10$D0C.YVSmTbWkM0g.ZwYmlONYyGMp638jdqxDdL5BFrhAtD6boXmnG','ROLE_HR','hr_user'
     '2','$2a$10$28rHZmomWhd3RLIquv.2LelgQa7BmgUaM8Jyi4Qy2D.MfuGOitew6','ROLE_MANAGER','manager_user'
 
+Commands should follow the syntax below:
+
+    curl -u username:password https://localhost:8443/api/employees -k
+
+where:
+
+  -u (Passes in credentials using HTTP Basic Auth)
+  
+  -k (Skips certification verification, as this is a self-signed certificate)
+
 
 
 
