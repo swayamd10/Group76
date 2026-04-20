@@ -3,7 +3,9 @@ package com.example.group76_part1.entities;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
+
 @Entity
+@Table(name="assignments")
 public class Assignment {
 
     // Set GenerationType to Identity so that SpringBoot automatically instantiates an ID

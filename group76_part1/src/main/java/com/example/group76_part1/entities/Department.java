@@ -9,11 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "departments")
 public class Department {
 
     // Set GenerationType to Identity so that SpringBoot automatically instantiates an ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true)
     private Long id;
 
     @NotBlank(message = "Department name must not be null or blank")

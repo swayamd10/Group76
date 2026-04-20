@@ -35,6 +35,13 @@ public class Employee {
     @NotBlank(message = "Email must not be blank")
     private String email;
 
+    @NotBlank(message = "Address must not be blank")
+    private String address;
+
+    @NotBlank(message = "Rank must not be blank")
+    @Column(name = "employee_rank")
+    private String rank;
+
     // Generating an ArrayList of all Assignments related to this department
     // mappedBy onto employee, so we can use employee ID as a foreign key in Assignment
     // Initialises an empty array, so that no NullException is thrown upon creation.
@@ -59,6 +66,12 @@ public class Employee {
 
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+
+    public String getRank() { return rank; }
+    public void setRank(String rank) { this.rank = rank; }
 
     public List<Assignment> getAssignments() { return assignments; }
     public void setAssignments(List<Assignment> assignments) { this.assignments = assignments; }

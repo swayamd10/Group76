@@ -1,0 +1,661 @@
+DELETE https://localhost:8443/api/assignments/1
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=73A31AF0A5DBF0BE23E7738FBCC647B0
+content-length: 0
+
+<> 2026-04-17T083735.404.json
+
+###
+
+DELETE https://localhost:8443/api/assignments/1
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=73A31AF0A5DBF0BE23E7738FBCC647B0
+content-length: 0
+
+###
+
+GET https://localhost:8443/api/employees
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Should Fail",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 20000,
+  "email": "fail@test.com",
+  "address": "Nowhere"
+}
+
+<> 2026-04-17T083647.403.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+Content-Type: application/json
+Content-Length: 158
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Should Fail",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 20000,
+  "email": "fail@test.com",
+  "address": "Nowhere"
+}
+
+<> 2026-04-17T083536.403.json
+
+###
+
+GET https://localhost:8443/api/employees/99999
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T083529.404.json
+
+###
+
+PUT https://localhost:8443/api/employees/2/promote
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-17T083522.400.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "New Starter",
+  "contractType": "FULL_TIME",
+  "startDate": "2026-03-20",
+  "salary": 25000,
+  "email": "newstarter@test.com",
+  "address": "London"
+}
+
+<> 2026-04-17T083512.201.json
+
+###
+
+PUT https://localhost:8443/api/employees/1/promote
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-17T083504.200.json
+
+###
+
+PUT https://localhost:8443/api/employees/1/promote
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-17T083427.200.json
+
+###
+
+GET https://localhost:8443/api/employees?department=Logistics
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T083418.200.json
+
+###
+
+POST https://localhost:8443/api/assignments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "employeeId": 1,
+  "departmentId": 1,
+  "role": "Coordinator",
+  "accessLevel": "Standard"
+}
+
+<> 2026-04-17T083403.201.json
+
+###
+
+POST https://localhost:8443/api/assignments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "employeeId": 1,
+  "departmentId": 2,
+  "role": "Coordinator",
+  "accessLevel": "Standard"
+}
+
+<> 2026-04-17T083232.404.json
+
+###
+
+POST https://localhost:8443/api/assignments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "employeeId": 1,
+  "departmentId": 2,
+  "role": "Coordinator",
+  "accessLevel": "Standard"
+}
+
+<> 2026-04-17T083108.404.json
+
+###
+
+POST https://localhost:8443/api/departments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Logistics",
+  "budget": 100000,
+  "location": "Leicester"
+}
+
+<> 2026-04-17T083050.201.json
+
+###
+
+GET https://localhost:8443/api/employees/1
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T083030.200.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-17T083013.201.json
+
+###
+
+GET https://localhost:8443/api/departments
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T082620.200.json
+
+###
+
+GET https://localhost:8443/api/departments
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T082555.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081954.200.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-17T081811.201.json
+
+###
+
+GET https://localhost:8443/api/departments
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081803.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081758.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081749.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081744.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-17T081720.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T223720.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T223611.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T223536.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T214212.200.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-16T214044.201.json
+
+###
+
+POST https://localhost:8443/api/departments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Logistics",
+  "budget": 100000,
+  "location": "Leicester"
+}
+
+<> 2026-04-16T212029.201.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-16T211513.500.json
+
+###
+
+POST https://localhost:8443/api/departments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Logistics",
+  "budget": 100000,
+  "location": "Leicester"
+}
+
+<> 2026-04-16T211413.201.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-16T163825.500.json
+
+###
+
+POST https://localhost:8443/api/departments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Logistics",
+  "budget": 100000,
+  "location": "Leicester"
+}
+
+<> 2026-04-16T162807.201.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-16T161135.500.json
+
+###
+
+DELETE https://localhost:8443/api/employees/1
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-16T160134.404.json
+
+###
+
+DELETE https://localhost:8443/api/assignments/1
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-16T160126.404.json
+
+###
+
+PUT https://localhost:8443/api/employees/1/promote
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-16T160114.404.json
+
+###
+
+GET https://localhost:8443/api/employees?department=Logistics
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T160108.200.json
+
+###
+
+POST https://localhost:8443/api/assignments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "employeeId": 1,
+  "departmentId": 1,
+  "role": "Coordinator",
+  "accessLevel": "Standard"
+}
+
+<> 2026-04-16T160102.404.json
+
+###
+
+POST https://localhost:8443/api/departments
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Logistics",
+  "budget": 100000,
+  "location": "Leicester"
+}
+
+<> 2026-04-16T160055.201.json
+
+###
+
+POST https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+Content-Type: application/json
+Content-Length: 163
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Alice Johnson",
+  "contractType": "FULL_TIME",
+  "startDate": "2023-01-01",
+  "salary": 30000,
+  "email": "alice@test.com",
+  "address": "Liverpool"
+}
+
+<> 2026-04-16T160043.500.json
+
+###
+
+GET https://localhost:8443/api/departments
+Authorization: Basic bWFuYWdlcl91c2VyOnBhc3N3b3JkMTIz
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T160036.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T160031.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-16T160013.200.json
+
+###
+

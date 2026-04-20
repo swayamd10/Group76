@@ -1,0 +1,10 @@
+{
+  "employeeId": 1,
+  "employeeName": "Alice Johnson",
+  "oldRank": "JUNIOR",
+  "newRank": "MID",
+  "oldSalary": 30000.0,
+  "newSalary": 33000.0,
+  "increaseAmount": 3000.0,
+  "message": "Employee promoted successfully"
+}
