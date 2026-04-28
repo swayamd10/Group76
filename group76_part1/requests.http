@@ -123,5 +123,5 @@ Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
 
 
 ### 15. DELETE employee as HR
-DELETE https://localhost:8443/api/employees/1
+DELETE https://localhost:8443/api/employees/
 Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==

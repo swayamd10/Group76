@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "employeeId": 1,
+  "employeeName": "Alice Johnson",
+  "departmentId": 1,
+  "departmentName": "Logistics",
+  "role": "Coordinator",
+  "accessLevel": "Standard"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "contractType": "FULL_TIME",
+    "startDate": "2023-01-01",
+    "salary": 35640.0,
+    "email": "alice@test.com",
+    "address": "Liverpool",
+    "rank": "SENIOR"
+  },
+  {
+    "id": 2,
+    "name": "New Starter",
+    "contractType": "FULL_TIME",
+    "startDate": "2026-03-20",
+    "salary": 25000.0,
+    "email": "newstarter@test.com",
+    "address": "London",
+    "rank": "JUNIOR"
+  }
+]
