@@ -1,3 +1,25 @@
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=73A31AF0A5DBF0BE23E7738FBCC647B0
+
+<> 2026-04-28T091403.200.json
+
+###
+
+GET https://localhost:8443/api/employees
+Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=73A31AF0A5DBF0BE23E7738FBCC647B0
+
+<> 2026-04-28T091356.200.json
+
+###
+
 DELETE https://localhost:8443/api/assignments/1
 Authorization: Basic aHJfdXNlcjpwYXNzd29yZDEyMw==
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3

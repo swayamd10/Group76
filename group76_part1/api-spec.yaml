@@ -51,12 +51,12 @@ paths:
                 success:
                   value:
                     - id: 1
-                      name: Alice Johnson
+                      name: Test User
                       contractType: FULL_TIME
                       startDate: "2023-10-01"
                       salary: 33000.0
-                      email: alice@safedispatch.com
-                      address: Liverpool
+                      email: test@safedispatch.com
+                      address: Leicester
                       rank: MID
         '401':
           $ref: '#/components/responses/UnauthorizedResponse'
@@ -77,12 +77,12 @@ paths:
                 created:
                   value:
                     id: 1
-                    name: Alice Johnson
+                    name: Test User
                     contractType: FULL_TIME
                     startDate: "2023-10-01"
                     salary: 30000.0
-                    email: alice@safedispatch.com
-                    address: Liverpool
+                    email: test@safedispatch.com
+                    address: Leicester
                     rank: JUNIOR
         '400':
           $ref: '#/components/responses/BadRequestResponse'
@@ -106,12 +106,12 @@ paths:
                 success:
                   value:
                     id: 1
-                    name: Alice Johnson
+                    name: Test User
                     contractType: FULL_TIME
                     startDate: "2023-10-01"
                     salary: 33000.0
-                    email: alice@safedispatch.com
-                    address: Liverpool
+                    email: test@safedispatch.com
+                    address: Leicester
                     rank: MID
         '404':
           $ref: '#/components/responses/NotFoundResponse'
@@ -172,7 +172,7 @@ paths:
                 promoted:
                   value:
                     employeeId: 1
-                    employeeName: Alice Johnson
+                    employeeName: Test User
                     oldRank: JUNIOR
                     newRank: MID
                     oldSalary: 30000.0
@@ -213,7 +213,7 @@ paths:
                     - id: 1
                       name: Logistics
                       budget: 100000.0
-                      location: Liverpool
+                      location: Leicester
         '401':
           $ref: '#/components/responses/UnauthorizedResponse'
 
@@ -235,7 +235,7 @@ paths:
                     id: 1
                     name: Logistics
                     budget: 100000.0
-                    location: Liverpool
+                    location: Leicester
         '400':
           $ref: '#/components/responses/BadRequestResponse'
         '401':
@@ -259,7 +259,7 @@ paths:
                   value:
                     id: 1
                     employeeId: 1
-                    employeeName: Alice Johnson
+                    employeeName: Test User
                     departmentId: 1
                     departmentName: Logistics
                     role: Member
@@ -317,12 +317,12 @@ components:
           examples:
             employee:
               value:
-                name: Alice Johnson
+                name: Test User
                 contractType: FULL_TIME
                 startDate: "2023-10-01"
                 salary: 30000.0
-                email: alice@safedispatch.com
-                address: Liverpool
+                email: test@safedispatch.com
+                address: Leicester
                 rank: JUNIOR
 
     DepartmentRequestBody:
@@ -336,7 +336,7 @@ components:
               value:
                 name: Logistics
                 budget: 100000.0
-                location: Liverpool
+                location: Leicester
 
     AssignmentRequestBody:
       required: true
@@ -399,7 +399,7 @@ components:
       properties:
         name:
           type: string
-          example: Alice Johnson
+          example: Test User
         contractType:
           type: string
           example: FULL_TIME
@@ -414,10 +414,10 @@ components:
         email:
           type: string
           format: email
-          example: alice@safedispatch.com
+          example: test@safedispatch.com
         address:
           type: string
-          example: Liverpool
+          example: Leicester
         rank:
           type: string
           example: JUNIOR
@@ -461,7 +461,7 @@ components:
           example: 100000.0
         location:
           type: string
-          example: Liverpool
+          example: Leicester
 
     DepartmentResponse:
       type: object
