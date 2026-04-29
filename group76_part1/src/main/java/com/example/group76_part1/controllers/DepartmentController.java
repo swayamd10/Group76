@@ -13,10 +13,10 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/departments")
+@RequestMapping("/api/departments") //  Base URL for all endpoints in this controller
 public class DepartmentController {
 
-    private DepartmentService departmentService;
+    private DepartmentService departmentService; // service for all department operation
 
     public DepartmentController(DepartmentService departmentService) {
         this.departmentService = departmentService;
@@ -25,13 +25,15 @@ public class DepartmentController {
     @GetMapping
     @PreAuthorize("hasAnyAuthority('ROLE_MANAGER','ROLE_HR')")
     public ResponseEntity<List<DepartmentResponse>> getDepartments() {
-        return ResponseEntity.ok(departmentService.getAllDepartments());
+        return ResponseEntity.ok(departmentService.getAllDepartments()); // calls the service to fetch all departments
     }
 
     @PostMapping
     @PreAuthorize("hasAuthority('ROLE_HR')")
     public ResponseEntity<DepartmentResponse> createDepartment(@Valid @RequestBody DepartmentRequest request) {
-        DepartmentResponse response = departmentService.createDepartment(request);
+        DepartmentResponse response = departmentService.createDepartment(request); // calls the service to create a new department
+
+        // Builds the URI for the newly created department
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
                 .buildAndExpand(response.id())

@@ -19,6 +19,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+// A unit test for Employee Service
+
 @ExtendWith(MockitoExtension.class)
 class EmployeeServiceTest {
 
@@ -30,6 +32,9 @@ class EmployeeServiceTest {
 
     @Test
     void promoteEmployee_ShouldIncreaseSalaryAndRank_WhenEmployeeIsEligible() {
+
+        // Creates employee test data
+
         Employee employee = new Employee();
         employee.setId(1L);
         employee.setName("Alice");
@@ -43,14 +48,17 @@ class EmployeeServiceTest {
         when(employeeRepository.findById(1L)).thenReturn(Optional.of(employee));
         when(employeeRepository.save(any(Employee.class))).thenAnswer(invocation -> invocation.getArgument(0));
 
+        // calls service for response
         PromotionResponse response = employeeService.promoteEmployee(1L);
 
+        // Verify promotion responses
         assertEquals("JUNIOR", response.oldRank());
         assertEquals("MID", response.newRank());
         assertEquals(30000.0, response.oldSalary());
         assertEquals(33000.0, response.newSalary());
         assertEquals(3000.0, response.increaseAmount());
 
+        // Capture saved employee to confirm the values
         ArgumentCaptor<Employee> captor = ArgumentCaptor.forClass(Employee.class);
         verify(employeeRepository).save(captor.capture());
 
@@ -61,6 +69,7 @@ class EmployeeServiceTest {
 
     @Test
     void promoteEmployee_ShouldThrowBusinessRuleException_WhenEmployeeStartedLessThanSixMonthsAgo() {
+        // Create employee who has worked for less than 6 months
         Employee employee = new Employee();
         employee.setId(2L);
         employee.setName("Bob");
@@ -70,25 +79,29 @@ class EmployeeServiceTest {
 
         when(employeeRepository.findById(2L)).thenReturn(Optional.of(employee));
 
+        // verify BusinessRuleException is thrown
         BusinessRuleException ex = assertThrows(
                 BusinessRuleException.class,
                 () -> employeeService.promoteEmployee(2L)
         );
 
+        // Verify correct exception message and makes sure employee is not saved
         assertEquals("Employee is not eligible for promotion yet", ex.getMessage());
         verify(employeeRepository, never()).save(any(Employee.class));
     }
 
-    @Test
+    @Test // Tests behaviour when employee ID doesn't exist
     void promoteEmployee_ShouldThrowResourceNotFoundException_WhenEmployeeDoesNotExist() {
+
         when(employeeRepository.findById(99L)).thenReturn(Optional.empty());
 
         assertThrows(ResourceNotFoundException.class, () -> employeeService.promoteEmployee(99L));
         verify(employeeRepository, never()).save(any(Employee.class));
     }
 
-    @Test
+    @Test // Tests default rank assignment when rank has not been provided
     void createEmployee_ShouldDefaultRankToJunior_WhenRankNotProvided() {
+        // Created employee data without rank
         EmployeeRequest request = new EmployeeRequest();
         request.setName("Charlie");
         request.setContractType("FULL_TIME");
@@ -105,6 +118,7 @@ class EmployeeServiceTest {
 
         var response = employeeService.createEmployee(request);
 
+        // Verify default rank and employee name
         assertEquals("JUNIOR", response.rank());
         assertEquals("Charlie", response.name());
     }
